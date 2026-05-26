@@ -36,16 +36,23 @@ print(converter.soviet_to_mashtots(text))
 
 A simple command line interface is provided.  Use `--direction` to select the conversion direction.
 
-To convert from Traditional orthography to Soviet orthography, use the following command.  
+To convert from Traditional orthography to Soviet orthography, use the following command.
 
 ```bash
 aoc --direction to_mashtots sINPUT.txt mOUTPUT.txt
 ```
 
-To convert from Soviet orthography to Traditional orthography, use the following command.  
+To convert from Soviet orthography to Traditional orthography, use the following command.
 
 ```bash
 aoc --direction to_soviet mINPUT.txt sOUTPUT.txt
+```
+
+Word `.docx` files can also be converted directly:
+
+```bash
+aoc --direction to_mashtots sINPUT.docx mOUTPUT.docx
+aoc --direction to_soviet mINPUT.docx sOUTPUT.docx
 ```
 
 Options:
